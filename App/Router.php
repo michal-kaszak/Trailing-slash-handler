@@ -4,19 +4,20 @@ namespace Scandiweb\Router\App;
 
 use Magento\Framework\App\Router\Base as SourceRouter;
 use Magento\Framework\App\RequestInterface;
+use Magento\Framework\App\ActionInterface;
 
 class Router extends SourceRouter
 {
     /**
      * Create matched controller instance
      *
-     * @param \Magento\Framework\App\RequestInterface $request
+     * @param RequestInterface $request
      * @param array $params
-     * @return \Magento\Framework\App\ActionInterface|null
+     * @return ActionInterface|null
      * @SuppressWarnings(PHPMD.CyclomaticComplexity)
      * @SuppressWarnings(PHPMD.NPathComplexity)
      */
-    protected function matchAction(\Magento\Framework\App\RequestInterface $request, array $params)
+    protected function matchAction(RequestInterface $request, array $params)
     {
         $moduleFrontName = $this->matchModuleFrontName($request, $params['moduleFrontName']);
         if (!strlen((string) $moduleFrontName)) {

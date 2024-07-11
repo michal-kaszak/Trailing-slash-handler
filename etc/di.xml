@@ -1,5 +1,12 @@
 <?xml version="1.0"?>
-
+<!--
+/**
+ * @category  Scandiweb
+ * @author    Michał Kaszak <info@scandiweb.com>
+ * @copyright Copyright (c) 2024 Scandiweb, Inc (https://scandiweb.com)
+ * @license   http://opensource.org/licenses/OSL-3.0 The Open Software License 3.0 (OSL-3.0)
+ */
+-->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Magento\Framework\App\Router\Base" type="Scandiweb\Router\App\Router" />
 </config>
