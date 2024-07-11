@@ -1,0 +1,1 @@
+You can easily change the use case of the module, by changing the logic you can make it to add trailing slashes instead of removing them.
